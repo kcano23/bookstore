@@ -46,6 +46,11 @@ public class BookService {
 	    		return this.bookRepository.save(toUpdate);
 	    	}
 	    }
+	    //overloading for updatePet
+	    public Books updateBooks(Books book) {
+	    	return this.bookRepository.save(book);
+	    }
+	    
 	    //delete a book
 	    public void deleteBook(Long id) {
 	    	this.bookRepository.deleteById(id);
